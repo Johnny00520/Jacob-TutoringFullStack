@@ -1,0 +1,151 @@
+.contact-page {
+    width: 95%;
+    background: #868582;
+    padding-bottom: 100px;
+    color: #636363;
+    margin: 0 auto;
+
+    .contact-page-header {
+        display: flex;
+        padding-top: 98px;
+
+        img {
+            width: 10%;
+            height: 100%;
+            margin: 0 6%;
+        }
+    }
+
+    .row {
+        width: 100%;
+        max-width: 1020px;
+        margin: 3% auto;
+    }
+    
+    .row-input {
+        margin: 0 5%;
+        // margin-right: 20%;
+        display: flex;
+
+        .row-personal-container {
+            display: flex;
+            flex-direction: column;
+            margin: 5% auto;
+
+            .row-myInfo {
+                text-align: left;
+                padding-bottom: 20%;
+            }
+            .row-myTweet {
+                text-align: left;
+            }
+        }
+    }
+
+    .contact-page-header-title {
+        margin: 0 auto;
+        color: white;
+        font: 17px/33px opensans-light, sans-serif;
+    }
+
+    .contact-page-title {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .contact-page .contact-page-header {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+
+    .contact-page .contact-page-title {
+        display: block;
+        color: white;
+    }
+
+    .contact-page-header img {
+        display: none;
+    }
+
+    .contact-page .row-input {
+        display: flex;
+        flex-direction: column;
+        // padding: 0 10%;
+        width: 100%;
+
+        .row-personal-container {
+            display: flex;
+            flex-direction: row;
+
+            padding-right: 10%;
+            justify-content: space-evenly;
+            width: 80%;
+        }
+        .contact-image {
+            display: none;
+        }
+
+        * {
+            margin-bottom: 0;
+        }
+    }
+
+    .Contact-container {
+        width: 140%;
+    }
+}
+
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .contact-page .contact-page-header {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+    .contact-page .contact-page-header-title {
+        font: 13px/33px opensans-light, sans-serif;
+    }
+
+    .contact-page .contact-page-title {
+        display: block;
+        color: white;
+    }
+
+    .contact-page-header img {
+        display: none;
+    }
+
+    .contact-page .row-input {
+        display: flex;
+        flex-direction: column;
+        // padding: 0 10%;
+        width: 100%;
+
+        .row-personal-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-right: 10%;
+        }
+
+        .contact-image {
+            display: none;
+        }
+    }
+
+    .Contact-container {
+        width: 140%;
+    }
+}

@@ -1,0 +1,241 @@
+.profolioPage {
+    background: #93ddf3;
+    width: 95%;
+    padding-bottom: 66px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 40px;
+        font-family: 'open-sans';
+    }
+}
+
+.show-grid {
+    // display: flex;
+}
+
+.profolioPage-description {
+    padding: 0 5%;
+    text-align: left;
+    font: 20px/33px opensans-light, "Open Sans";
+
+    p {
+        margin: 0 0 15px;
+    }
+
+    padding-top: 3%;
+}
+
+.profilePic {
+    width: 70%;
+}
+
+.accomplishment-list {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.testimonials-body {
+    width: 85%;
+    margin: auto;
+    background-color: lightgray;;
+
+    .testimonials-body-container {
+        
+        .testimonials-body-container-content-left {
+            width: 100%;
+
+            .testimonials-body-container-response {
+                text-align: left;
+                margin: 10px;
+                padding: 10px;
+                background-color: white;
+        
+                .testmonials-client-name {
+                    margin: 0;
+                    // margin-top: 10px;
+                    font: 15px/33px 'opensans-light', "Open Sans";
+                    font-style: italic;
+                }
+            }
+        }
+
+        .testimonials-body-container-content-right {
+            width: 100%;
+
+            .testimonials-body-container-response {
+                text-align: left;
+                margin: 10px;
+                padding: 10px;
+                background-color: white;
+        
+                .testmonials-client-name {
+                    margin: 0;
+                    margin-top: 10px;
+                    font: 15px/33px 'opensans-light', "Open Sans";
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .testimonial-title {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-family: "Open Sans";
+    }
+
+    .testimonial-subtitle {
+
+        font-family: "Open Sans";
+        color: red;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .testimonials-body .testimonials-body-container {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-evenly;
+    }
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .testimonials-body .testimonials-body-container {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-evenly;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .testimonials-body .testimonials-body-container {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+    }
+
+    .show-grid {
+        display: flex;
+        flex-direction: column;
+    
+        .profilePic-container {
+            margin: 0 auto;
+            order: 1;
+        }
+
+        .profolioPage-description {
+            order: 2;
+            width: 100%;
+            font: 19px/33px opensans-light, "Open Sans";
+
+            
+        }
+        .accomplishment-list {
+            order: 3;
+            margin: 0 auto;
+        }
+    }
+
+    .profilePic-container {
+        order: 1;
+    }
+    .profolioPage-description {
+        order: 2;
+    }
+
+    .accomplishment-list {
+        order: 3;
+        width: 55%;
+
+    }
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .testimonials-body .testimonials-body-container {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+    }
+
+    .show-grid {
+        display: flex;
+        flex-direction: column;
+    
+        .profilePic-container {
+            margin: 0 auto;
+            order: 1;
+        }
+
+        .profolioPage-description {
+            order: 2;
+            font: 18px/33px opensans-light, "Open Sans";
+
+        }
+        .accomplishment-list {
+            width: 70%;
+            order: 3;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .testimonials-body .testimonials-body-container {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+    }
+
+    .show-grid {
+        display: flex;
+        flex-direction: column;
+    
+        .profilePic-container {
+            margin: 0 auto;
+            order: 1;
+        }
+
+        .profolioPage-description {
+            order: 2;
+            font: 15px/33px opensans-light, "Open Sans";
+
+        }
+        .accomplishment-list {
+            width: 100%;
+            order: 3;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.App {
+    text-align: center;
+
+    /* Don't do it for now because mobile version is not done yet */
+    overflow-x: hidden; 
+
+    .jumbotron {
+        padding-bottom: 1%;
+        margin-bottom: 0; 
+    }    
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* Styles */
+    .jumbotron .navbar-default {
+        width: 60% !important;
+        margin: 0 auto;
+    }
+
+    .jumbotron .container { // Navbar container
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Styles */
+    .jumbotron .navbar-default {
+        width: 60% !important;
+        margin: 0 auto;
+    }
+
+    .jumbotron .container { // Navbar container
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .jumbotron .navbar-default {
+        width: 60% !important;
+        margin: 0 auto;
+    }
+
+    .jumbotron .container { // Navbar container
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .jumbotron .navbar-default {
+        width: 100% ;
+    }
+
+    .jumbotron .container { // Navbar container
+        width: 100%;
+
+    }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}

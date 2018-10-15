@@ -1,0 +1,169 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+.resources-row {
+    width: 95%;
+    padding: 3% 2%;
+    margin: 0 auto;
+    background-color: lightblue;
+
+    .resources-page-title {
+        font-family: 'open-sans';
+        // font-size: 3vw;
+        font-size: 30px;
+        padding-bottom: 3%;
+    }
+
+    .resources-page-subsection {
+        font-family: 'open-sans';
+        text-align: left;
+
+        .resources-subsection-title {
+            // font-size: 2vw;
+            font-size: 18px;
+        }
+        .resources-subsection-description {
+            padding: 1% 0;
+            font-size: 16px;
+            font-family: 'open-sans';
+        }
+    }
+
+    .catagory-subtitle {
+        text-align: left;
+        font-size: 20px;
+        font-family: 'open-sans';
+    }
+    .catagoriesDescription {
+        font-size: 15px;
+        text-align: left;
+        line-height: 25px;
+
+        .bookAuthor {
+            line-height: 30px;
+        }
+    }
+
+    .resourcesListDetail {
+        font-size: 20px;
+    }
+
+    .beforeStart {
+        font-family: 'open-sans';
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1281px) {
+      
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    // .row {
+    //     width: 90%;
+    //     margin: 0 auto;
+    // }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    // .show-grid {
+    //     width: 90%;
+    //     margin: 0 auto;
+    //     flex-direction: row;
+    // }
+
+    .resources-row {
+
+        margin: 0 auto;
+
+        .resources-options {
+            width: 30%;
+        }
+
+        .resources-description {
+            width: 70%;
+        }
+    }  
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    // .show-grid {
+    //     flex-direction: row;
+    // }
+
+    // .row {
+    //     width: 90%;
+    //     margin: 0 auto;
+
+    // }  
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .resources-row {
+        margin: 0 auto;
+
+        .resources-options {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .list-group .collapse {
+                // display: flex;
+                display:block;
+            }
+        }
+
+        .resources-description {
+            width: 100%;
+        }
+    }  
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .resources-row {
+        margin: 0 auto;
+
+        .resources-options {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .list-group {
+                // display: flex;
+                display: block;
+            }
+        }
+
+        .resources-description {
+            width: 100%;
+        }
+    }  
+}

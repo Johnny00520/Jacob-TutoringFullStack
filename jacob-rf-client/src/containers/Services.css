@@ -1,0 +1,42 @@
+.services-row {
+  width: 95%;
+  padding: 2% 2%;
+  margin: 0 auto;
+  background-color: #cdcccf; }
+  .services-row .servicesList-title {
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: "Open Sans"; }
+  .services-row .serviceList-header {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px; }
+  .services-row .servicesList-item {
+    text-align: left;
+    padding-bottom: 5px; }
+    .services-row .servicesList-item .servicesChildren {
+      list-style: none; }
+  .services-row .extraServicesUnOrder .extraServicesTitle {
+    text-align: left;
+    line-height: 25px; }
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/

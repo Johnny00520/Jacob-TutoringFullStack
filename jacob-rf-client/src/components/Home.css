@@ -1,0 +1,76 @@
+.home-title {
+  font-size: 50px; }
+
+.body-container .homePage-image {
+  width: 70%; }
+
+.body-container .body-description {
+  width: 90%;
+  padding: 10% 0;
+  line-height: 2.1em;
+  font: 35px/30px 'opensans-bold', 'sans';
+  background-color: lightblue;
+  border-radius: 1%; }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .home-title {
+    font-size: 50px; }
+  .body-container .homePage-image {
+    width: 70%; }
+  .body-container .body-description {
+    width: 90%;
+    margin: 10px auto;
+    line-height: 2.1em;
+    font: 35px/30px 'opensans-bold', sans; } }
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .home-title {
+    font-size: 50px; }
+  .body-container .homePage-image {
+    width: 70%; }
+  .body-container .body-description {
+    width: 90%;
+    margin: 10px auto;
+    line-height: 2.1em;
+    font: 35px/30px 'opensans-bold', sans; } }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body-container .body-description {
+    width: 90%;
+    margin: 10px auto;
+    line-height: 2.1em;
+    font: 25px/30px 'opensans-bold', sans; } }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .body-container .body-description {
+    width: 90%;
+    margin: 10px auto;
+    line-height: 2.1em;
+    font: 20px/30px 'opensans-bold', sans; } }
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .body-container .body-description {
+    width: 90%;
+    margin: 10px auto;
+    line-height: 2.1em;
+    font: 15px/30px 'opensans-bold', sans; } }

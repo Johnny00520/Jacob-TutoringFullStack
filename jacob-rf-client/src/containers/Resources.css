@@ -1,0 +1,89 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+.resources-row {
+  width: 95%;
+  padding: 3% 2%;
+  margin: 0 auto;
+  background-color: lightblue; }
+  .resources-row .resources-page-title {
+    font-family: 'open-sans';
+    font-size: 30px;
+    padding-bottom: 3%; }
+  .resources-row .resources-page-subsection {
+    font-family: 'open-sans';
+    text-align: left; }
+    .resources-row .resources-page-subsection .resources-subsection-title {
+      font-size: 18px; }
+    .resources-row .resources-page-subsection .resources-subsection-description {
+      padding: 1% 0;
+      font-size: 16px;
+      font-family: 'open-sans'; }
+  .resources-row .catagory-subtitle {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'open-sans'; }
+  .resources-row .catagoriesDescription {
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px; }
+    .resources-row .catagoriesDescription .bookAuthor {
+      line-height: 30px; }
+  .resources-row .resourcesListDetail {
+    font-size: 20px; }
+  .resources-row .beforeStart {
+    font-family: 'open-sans';
+    font-size: 20px; }
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .resources-row {
+    margin: 0 auto; }
+    .resources-row .resources-options {
+      width: 30%; }
+    .resources-row .resources-description {
+      width: 70%; } }
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .resources-row {
+    margin: 0 auto; }
+    .resources-row .resources-options {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .resources-row .resources-options .list-group .collapse {
+        display: block; }
+    .resources-row .resources-description {
+      width: 100%; } }
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .resources-row {
+    margin: 0 auto; }
+    .resources-row .resources-options {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .resources-row .resources-options .list-group {
+        display: block; }
+    .resources-row .resources-description {
+      width: 100%; } }
